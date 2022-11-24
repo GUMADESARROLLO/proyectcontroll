@@ -16,7 +16,7 @@
               $db['default']['hostname'] = '127.0.0.1';
               $db['default']['username'] = 'root';
               $db['default']['password'] = 'a7m1425.';
-              $db['default']['database'] = 'FC_db';
+              $db['default']['database'] = 'fc_db';
               $db['default']['dbdriver'] = 'mysql';
               $db['default']['dbprefix'] = '';
               $db['default']['pconnect'] = TRUE;

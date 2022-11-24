@@ -18,16 +18,18 @@
         <li role="presentation" class="hidden-xs"><a href="#tasks-tab" id="task_menu_link" aria-controls="tasks-tab" role="tab" data-toggle="tab"><?php if ($mytasks != 0) {
     ?><span class="badge"><?=$mytasks?></span><?php
 } ?><?=$this->lang->line('application_tasks');?></a></li>
-        <li role="presentation" class="hidden-xs"><a href="#milestones-tab" aria-controls="tasks-tab" role="tab" data-toggle="tab"><?=$this->lang->line('application_milestones');?></a></li>
-        <li role="presentation" class="hidden-xs"><a href="#gantt-tab" class="resize-gantt" aria-controls="gantt-tab" role="tab" data-toggle="tab"><?=$this->lang->line('application_gantt');?></a></li>
-        <li role="presentation" class="hidden-xs"><a href="#media-tab" class="media-tab-trigger" aria-controls="media-tab" role="tab" data-toggle="tab"><?=$this->lang->line('application_files');?></a></li>
-        <li role="presentation" class="hidden-xs"><a href="#notes-tab" aria-controls="notes-tab" role="tab" data-toggle="tab"><?=$this->lang->line('application_notes');?></a></li>
-       <?php if ($invoice_access) {
+
+        <li role="presentation" class="hidden-xs" style="display:none"><a href="#milestones-tab" aria-controls="tasks-tab" role="tab" data-toggle="tab"><?=$this->lang->line('application_milestones');?></a></li>
+        <li role="presentation" class="hidden-xs" style="display:none"><a href="#gantt-tab" class="resize-gantt" aria-controls="gantt-tab" role="tab" data-toggle="tab"><?=$this->lang->line('application_gantt');?></a></li>
+        <li role="presentation" class="hidden-xs" style="display:none"><a href="#media-tab" class="media-tab-trigger" aria-controls="media-tab" role="tab" data-toggle="tab"><?=$this->lang->line('application_files');?></a></li>
+        <li role="presentation" class="hidden-xs" style="display:none"><a href="#notes-tab" aria-controls="notes-tab" role="tab" data-toggle="tab"><?=$this->lang->line('application_notes');?></a></li>
+
+        <?php if ($invoice_access) {
         ?>
-        <li role="presentation" class="hidden-xs"><a href="#invoices-tab" aria-controls="invoices-tab" role="tab" data-toggle="tab"><?=$this->lang->line('application_invoices'); ?></a></li>
+        <li role="presentation" class="hidden-xs" style="display:none"><a href="#invoices-tab" aria-controls="invoices-tab" role="tab" data-toggle="tab"><?=$this->lang->line('application_invoices'); ?></a></li>
        <?php
     } ?>
-        <li role="presentation" class="hidden-xs"><a href="#activities-tab" aria-controls="activities-tab" role="tab" data-toggle="tab"><?=$this->lang->line('application_activities');?></a></li>
+        <li role="presentation" class="hidden-xs" style="display:none"><a href="#activities-tab" aria-controls="activities-tab" role="tab" data-toggle="tab"><?=$this->lang->line('application_activities');?></a></li>
         
         <li role="presentation" class="dropdown visible-xs">
             <a  href="#" 
